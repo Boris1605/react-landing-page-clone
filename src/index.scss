@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Space+Mono&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: rgb(233, 222, 243);
+  --color-purple: #e9def3;
+  --color-white: #f2f1ef;
+  --color-blue: #e9edef;
+  --color-text: #686871;
+}
+
+a,
+a:link {
+  color: inherit;
+  text-decoration: none;
+}

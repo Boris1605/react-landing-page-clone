@@ -1,0 +1,25 @@
+.app {
+  font-family: 'PT Serif', serif;
+  background: var(--color-background);
+  color: var(--color-text);
+
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+.header {
+  background: var(--color-background);
+  justify-content: space-between;
+  padding: 3rem 3rem;
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

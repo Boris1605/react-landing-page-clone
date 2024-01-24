@@ -2,24 +2,110 @@
   font-family: 'PT Serif', serif;
   background: var(--color-background);
   color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
 
-  .wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
+.wrapper {
+  max-width: 1000px; /* Adjust the max-width as needed */
+  width: 100%; /* Take up full width */
+  padding: 0 1rem; /* Adjust the padding as needed */
 }
 
 .header {
   background: var(--color-background);
-  justify-content: space-between;
-  padding: 3rem 3rem;
+  padding: 1rem 0; /* Adjust top and bottom padding */
+  width: 100%; /* Take up full width */
+  display: flex;
+  justify-content: space-between; /* Distribute content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.leftContent {
+  display: flex;
+  align-items: center;
 
   nav {
     ul {
       list-style: none;
       display: flex;
-      gap: 40px;
+      gap: 10px; /* Adjust the gap between navigation items */
+    }
+
+    li {
+      margin-right: 10px; /* Adjust the margin between navigation items */
+      color: rgba(48, 51, 58, 0.7); /* Apply specified color */
+      font-size: 1.05rem; /* Apply specified font size */
+      font-weight: 600; /* Apply specified font weight */
+      line-height: 1.25; /* Apply specified line height */
     }
   }
+}
+
+.logo {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logoContainer within the header */
+  flex: 1; /* Allow the logoContainer to take up remaining space */
+}
+
+.getRewindLink {
+  margin-left: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-background);
+  border-radius: 20px;
+}
+
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.middleSection h1 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  line-height: 1.2; /* Adjust the line height to control the spacing between lines */
+}
+
+.comingSoonText {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.comingSoonButton {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-background);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  margin-top: 40px;
+}
+
+input[type='email'] {
+  flex: 1; /* Let the input take remaining space */
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.getRewindButton {
+  background-color: var(--color-purple);
+  padding: 10px 20px;
+  border-radius: 20px; /* Adjust border-radius to match input */
+  cursor: pointer;
 }
